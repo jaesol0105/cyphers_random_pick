@@ -1,0 +1,48 @@
+table,td{
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+#char_list{
+    background-color: #4c4c4c;
+}
+
+.div_flex{
+    width: 90%;
+    display: flex;
+    margin: 0;
+}
+
+.button {
+    width: 62px;
+    height: 62px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+  }
+  
+.button:active {
+
+    position: relative;
+    top:2px;
+}
+  
+.button:hover {
+    background-color: #ddd;
+}
+
+.menu{
+    display: flex;
+    margin: 0;
+}
+
+.stop-dragging{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
