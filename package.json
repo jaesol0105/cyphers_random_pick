@@ -1,0 +1,75 @@
+{
+  "name": "cyphers_random",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build:osx": "electron-builder --mac",
+    "build:linux": "npm run build:linux32 && npm run build:linux64",
+    "build:linux32": "electron-builder --linux --ia32",
+    "build:linux64": "electron-builder --linux --x64",
+    "build:win": "npm run build:win32 && npm run build:win64",
+    "build:win32": "electron-builder --win portable --ia32",
+    "build:win64": "electron-builder --win portable --x64"
+  },
+  "author": {
+    "name": "solbaram",
+    "email": "solbaram@cyphers.com",
+    "url": "https://github.com/jaesol0105"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "13.1.0",
+    "electron-builder": "22.10.5"
+  },
+  "build": {
+    "productName": "cyphers_random",
+    "appId": "com.cyphers_random",
+    "asar": true,
+    "protocols": {
+      "name": "cyphers_random",
+      "schemes": [
+        "cyphers_random"
+      ]
+    },
+    "mac": {
+      "target": [
+        "default"
+      ],
+      "icon": "./assets/icons/mac/icon.icns"
+    },
+    "dmg": {
+      "title": "cyphers_random",
+      "icon": "./assets/icons/mac/icon.icns"
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./assets/icons/win/icon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "zip",
+        "tar.gz"
+      ],
+      "icon": "./assets/icons/win/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": false,
+      "installerLanguages": [
+        "en_US",
+        "ko_KR"
+      ],
+      "language": "1042",
+      "shortcutName": "CYPHERS R A N D O M"
+    }
+  }
+}

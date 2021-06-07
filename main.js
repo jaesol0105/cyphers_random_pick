@@ -1,0 +1,20 @@
+const { app, BrowserWindow } = require('electron');
+
+function createWindow () {  // 브라우저 창을 생성
+  let win = new BrowserWindow({
+    width: 500,
+    height: 600,
+    center: true,
+    autoHideMenuBar: true,
+    resizable: false,
+    icon: __dirname + '/assets/icons/png/icon.png',
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  //브라우저창이 읽어 올 파일 위치
+  win.loadFile('./index.html')
+}
+
+app.on('ready', createWindow);
