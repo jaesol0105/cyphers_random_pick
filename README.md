@@ -1,5 +1,5 @@
 # Cyphers_Random_Pick
-<a href="https://jaesol0105.github.io/cyphers_random_pick/">사이퍼즈 캐릭터 랜덤 추첨 웹 페이지</a>
+<a href="https://jaesol0105.github.io/cyphers_random_pick/"><b>사이퍼즈 캐릭터 랜덤 추첨 웹 페이지</b></a>
 
 # Demo
 <img width="50%" src="https://user-images.githubusercontent.com/70834187/127539821-f0908cae-542a-4cb7-b962-7c32f1fcdb26.PNG">
